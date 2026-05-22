@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a quote from RS Furniture & Interiors for modular kitchens, wardrobes, and complete interior fit-outs across India.">
+  <title>Get a Quote – RS Furniture & Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav aria-label="Main navigation">
+      <div class="logo-wrap">
+        <img src="logo.jpg" alt="RS Furniture & Interiors Logo" width="50" height="50" loading="eager">
+        <div class="logo-text">
+          <span>RS • Ranjeet Sharma</span>
+          <span>Furniture & Interior Fit-Out Contractor</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="residential-projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="get-a-quote.html" class="nav-cta active">Get a Quote</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-tag">Get a Quote</span>
+      <h1>Share your project details</h1>
+      <p>
+        Fill this quick form and attach drawings or reference images via email or WhatsApp after submission.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <form action="https://formspree.io/f/your-endpoint-here" method="POST">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+
+        <label for="phone">Mobile Number</label>
+        <input id="phone" name="phone" type="tel" required autocomplete="tel">
+
+        <label for="email">Email</label>
+        <input id="email" name="_replyto" type="email" autocomplete="email">
+
+        <label for="location">City / Project Location</label>
+        <input id="location" name="location" type="text" required>
+
+        <label for="type">Type of space</label>
+        <select id="type" name="type">
+          <option>Residential – Apartment</option>
+          <option>Residential – Villa / Independent house</option>
+          <option>Cafe / Bar</option>
+          <option>Office</option>
+          <option>Retail / Showroom</option>
+          <option>Other</option>
+        </select>
+
+        <label for="scope">Scope of work</label>
+        <textarea id="scope" name="scope" placeholder="Example: Modular kitchen + wardrobes + beds + POP ceiling."></textarea>
+
+        <label for="budget">Approximate budget range (optional)</label>
+        <input id="budget" name="budget" type="text" placeholder="Example: ₹5–10 lakh">
+
+        <button type="submit" class="btn-primary">Submit Inquiry</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© RS – Ranjeet Sharma. Precision-Built Furniture for Modern Spaces. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Footer links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/919910762309?text=Hi%20Ranjeet,%20I%20want%20to%20discuss%20a%20furniture%20%2F%20interior%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <span aria-hidden="true">💬</span>
+</a>
+<script src="main.js" defer></script>
+</body>
+</html>
